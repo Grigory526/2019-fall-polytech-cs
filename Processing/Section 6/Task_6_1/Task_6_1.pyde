@@ -10,8 +10,7 @@ i = 0
 k = 1
 
 def draw ():
-    global i
-    global k
+    global i,k
     stroke(i, 20)
     line(mouseX,mouseY,random(0,500),0)
     i = i + k
@@ -33,8 +32,7 @@ i = 0
 k = 1
 
 def draw ():
-    global i
-    global k
+    global i,k
     stroke(i, 20)
     line(mouseX,mouseY,random(0,500),random(0,500))
     i = i + k

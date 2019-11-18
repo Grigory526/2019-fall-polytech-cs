@@ -1,10 +1,10 @@
 def setup():
     size(600, 600)
     noLoop()
-
-def draw():
     background(100)
     smooth()
+
+def draw():
     strokeWeight(50)
     stroke(200)
   

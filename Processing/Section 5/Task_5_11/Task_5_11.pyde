@@ -2,12 +2,11 @@ def setup():
     size(500, 500)
     smooth() 
 
-counter=0.2
-s=1
+counter=0
+s=0
 
 def draw():
-    global s
-    global counter
+    global s,counter
     noStroke()
     fill(10, 50)
     rect(-1,-1,(width+1)/2,height+1)

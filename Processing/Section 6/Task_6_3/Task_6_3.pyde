@@ -9,8 +9,7 @@ k = 1
 flug = 1
 
 def upDate():
-    global i
-    global k
+    global i,k
     i = i + k
     if(i == 255):
         k=-1

@@ -1,12 +1,13 @@
 def setup(): 
     size(600, 600)
-    noLoop()
-
-def draw():
     background(100)
     smooth()
-    strokeWeight(50)
+    noLoop()
+
+
+def draw():
     translate(width/2, height/2)
+    strokeWeight(50)
     stroke(210)
     line(0,0,250,0)
     rotate(PI/-4)

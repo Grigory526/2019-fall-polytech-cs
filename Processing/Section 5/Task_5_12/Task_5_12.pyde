@@ -14,14 +14,7 @@ mg = 150
 mb = 100
 
 def draw():
-    global l1x1
-    global l1y1
-    global l1x2
-    global l1y2
-    global flug
-    global mr
-    global mg
-    global mb
+    global l1x1,l1y1,l1x2,l1y2,flug,mr,mg,mb
     background(0)
     strokeWeight(120)
     stroke(mr , mg, mb, 25)
@@ -31,15 +24,13 @@ def draw():
         stroke(mr , mg , mb , (255/11)*i)
         line(l1x1 + k, l1y1 , l1x2 , l1y2 - k)
         line(l1x1 , l1y1 + k, l1x2 - k, l1y2)
-        if(l1x1 == l1x2 or (l1x1 + k) == l1x2 or l1x1 == (l1x2
+        if (l1x1 == l1x2 or (l1x1 + k) == l1x2 or l1x1 == (l1x2
 - k)):
             mr = random(0,150)
             mg = random(0,150)
             mb = random(0,150)
-        
     
-
-
+    
         l1x1 = l1x1 + flug
         l1y1 = l1y1 + flug
         l1x2 = l1x2 - flug

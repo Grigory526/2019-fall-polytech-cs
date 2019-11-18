@@ -15,17 +15,16 @@ mcolor=0
 
 
 def draw():
-    global mcolor
-    global counter
+    global mcolor,counter
     while counter < 2*PI:
         x1 = sin(counter)*cRadius+cx
         y1 = cos(counter)*cRadius+cy
-        mcolor=mcolor+1
+        mcolor +=1
         stroke(mcolor)
         line(cx,cy,x1,y1)
-        counter=counter + 2*PI/255
+        counter += 2*PI/255
     
-    if(counter > 2*PI):
+    if (counter > 2*PI):
         counter=0
         mcolor=0
         

@@ -3,10 +3,11 @@ def setup():
     smooth()
     noLoop()
     background(10)
-    strokeWeight(10)
-    stroke(150)
+
   
 def draw():
+    strokeWeight(10)
+    stroke(150)
     fill(50)
     rectMode(CORNERS)
     rect(200, 100, 250, 200)
